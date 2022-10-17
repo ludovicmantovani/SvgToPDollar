@@ -71,7 +71,8 @@ def display_points(data):
         marker = 'o'
         yaxis = plt.gca()
         yaxis.invert_yaxis()
-        plt.plot(float(point[0]), float(point[1]), marker=marker, color="red")
+        p = plt.plot(float(point[0]), float(point[1]), marker=marker, color="red")
+        plt.axis('equal')
     plt.show()
 
 
