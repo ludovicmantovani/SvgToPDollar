@@ -69,6 +69,8 @@ def display_points(data):
         point = data[i]
         marker = '$' + str(i) + '$'
         marker = 'o'
+        yaxis = plt.gca()
+        yaxis.invert_yaxis()
         plt.plot(float(point[0]), float(point[1]), marker=marker, color="red")
     plt.show()
 
